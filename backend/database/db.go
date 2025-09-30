@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/Zhaobo-Wang/go-projects/models"
+	"github.com/Zhaobo-Wang/go-project-unregister/models"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
@@ -55,7 +55,7 @@ func ConnectDatabase() {
 	}
 
 	// 3) 自动迁移（把错误打印并在出错时终止，方便发现问题）
-	if err := DB.AutoMigrate(&models.User{}, &models.Todo{}); err != nil {
+	if err := DB.AutoMigrate(&models.User{}, &models.Todo{}, &models.Message{}); err != nil {
 		log.Fatal("AutoMigrate failed:", err)
 	}
 

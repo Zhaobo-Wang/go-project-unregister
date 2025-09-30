@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/Zhaobo-Wang/go-projects/controllers"
+	"github.com/Zhaobo-Wang/go-project-unregister/controllers"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
@@ -18,10 +18,10 @@ func SetupRouter() *gin.Engine {
 	}))
 
 	api := r.Group("/api")
-	
+
 	api.POST("/register", controllers.Register)
 	api.POST("/login", controllers.Login)
-	
+
 	api.GET("/todos", controllers.GetTodos)
 	api.POST("/todos", controllers.CreateTodo)
 	api.GET("/todos/:id", controllers.GetTodo)
@@ -30,6 +30,9 @@ func SetupRouter() *gin.Engine {
 	api.DELETE("/todos/:id", controllers.DeleteTodo)
 
 	api.GET("/user-profile", controllers.GetUser)
-	
+
+	// New routes for message handling
+	api.POST("/send-message", controllers.SendMessage)
+
 	return r
 }

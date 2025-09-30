@@ -3,8 +3,8 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/Zhaobo-Wang/go-projects/database"
-	"github.com/Zhaobo-Wang/go-projects/models"
+	"github.com/Zhaobo-Wang/go-project-unregister/database"
+	"github.com/Zhaobo-Wang/go-project-unregister/models"
 	"github.com/gin-gonic/gin"
 )
 

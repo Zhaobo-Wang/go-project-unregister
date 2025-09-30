@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Zhaobo-Wang/go-projects/database"
-	"github.com/Zhaobo-Wang/go-projects/models"
+	"github.com/Zhaobo-Wang/go-project-unregister/database"
+	"github.com/Zhaobo-Wang/go-project-unregister/models"
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 )
@@ -278,6 +278,6 @@ func DeleteTodo(c *gin.Context) {
 
 	respondJSON(c, http.StatusOK, gin.H{
 		"message": "Todo successfully deleted",
-		"id": id,
+		"id":      id,
 	})
 }

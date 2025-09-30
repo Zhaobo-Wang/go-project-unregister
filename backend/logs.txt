@@ -23,3 +23,9 @@
 2025/09/29 14:38:20 UpdateTodo called - id=53, userID=1
 2025/09/29 14:38:39 UpdateTodo called - id=48, userID=1
 2025/09/29 14:38:45 UpdateTodo called - id=48, userID=1
+2025/09/29 22:42:35 Warning: .env file not found
+2025/09/29 22:42:35 Failed to connect to MySQL server:Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/09/29 22:48:38 Has todos table? true
+2025/09/29 22:51:08 UpdateTodo called - id=13, userID=1
+2025/09/29 22:51:09 UpdateTodo called - id=13, userID=1
+2025/09/30 15:01:40 Has todos table? true

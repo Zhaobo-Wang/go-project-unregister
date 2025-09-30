@@ -2,13 +2,13 @@ package controllers
 
 import (
 	"net/http"
-	"time"
 	"os"
+	"time"
 
+	"github.com/Zhaobo-Wang/go-project-unregister/database"
+	"github.com/Zhaobo-Wang/go-project-unregister/models"
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/Zhaobo-Wang/go-projects/database"
-	"github.com/Zhaobo-Wang/go-projects/models"
 )
 
 // 用于 JWT 签名的密钥

@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/Zhaobo-Wang/go-projects/database"
-	"github.com/Zhaobo-Wang/go-projects/routes"
+	"github.com/Zhaobo-Wang/go-project-unregister/database"
+	"github.com/Zhaobo-Wang/go-project-unregister/routes"
 	"github.com/joho/godotenv"
 )
 
